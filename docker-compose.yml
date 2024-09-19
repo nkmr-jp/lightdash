@@ -40,6 +40,7 @@ services:
       - RUDDERSTACK_WRITE_KEY=${RUDDERSTACK_WRITE_KEY}
       - SCHEDULER_ENABLED=true
       - GROUPS_ENABLED=${GROUPS_ENABLED:-false}
+      - TZ=${TZ}
     volumes:
       - "${DBT_PROJECT_DIR}:/usr/app/dbt"
     ports:
